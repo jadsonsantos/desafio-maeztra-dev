@@ -1,0 +1,16 @@
+@import '../../styles/mixins';
+
+.tipbar {
+  background: var(--color-2-500, #353535);
+  padding: 3px 0;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-titilliumWeb);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @include desktop() {
+    font-size: 12px;
+  }
+}
