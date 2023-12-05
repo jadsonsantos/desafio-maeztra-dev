@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/src/*": ["./src/*"]
+      "@/src/*": ["./src/*"],
+      "@/fonts": ["./src/styles/fonts"]
     },
     "baseUrl": "src"
   },
