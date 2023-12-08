@@ -22,10 +22,10 @@ interface Product {
 }
 
 interface ProductProps {
-  product: Product[]
+  product: Product
 }
 
-const ShelfItem: React.FC<ProductProps> = ({ product }) => {
+const ShelfItem: React.FC<ProductProps> = ({ product }: ProductProps) => {
   const { name, price, description, skus, id } = product
 
   return (
