@@ -7,10 +7,10 @@ import classNames from 'classnames/bind'
 
 interface Actions {
   icon: string
-  title: string
+  title?: string
   link: string
   alt: string
-  isHighlighted: boolean
+  isHighlighted?: boolean
 }
 
 interface ActionsProp {
