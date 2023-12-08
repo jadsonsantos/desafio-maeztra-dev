@@ -7,17 +7,15 @@ interface Link {
   title: string
 }
 
-type Title = string
+interface LinksProps {
+  links: Link[]
+  heading: string
+}
 
-type Links = Link[]
-
-const SitemapList: React.FC<{ links: Links; title: Title }> = ({
-  links,
-  title
-}) => {
+const SitemapList: React.FC<LinksProps> = ({ links, heading }: LinksProps) => {
   return (
     <ul className={styles.sitemap__list}>
-      <h4 className={styles.sitemap__title}>{title}</h4>
+      <h4 className={styles.sitemap__title}>{heading}</h4>
       {links.map(({ link, title }: Link) => (
         <li key={title} className={styles.sitemap__item}>
           <Link href={link}>{title}</Link>

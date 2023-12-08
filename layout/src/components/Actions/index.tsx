@@ -5,15 +5,19 @@ import styles from './Actions.module.scss'
 
 import classNames from 'classnames/bind'
 
-type ActionsProp = {
-  icon: React.ReactNode
+interface Actions {
+  icon: string
   title: string
   link: string
   alt: string
   isHighlighted: boolean
 }
 
-const Actions = ({ actions }: ActionsProp[]) => {
+interface ActionsProp {
+  actions: Actions[]
+}
+
+const Actions: React.FC<ActionsProp> = ({ actions }: ActionsProp) => {
   const cx = classNames.bind(styles)
 
   const linkClass = cx({

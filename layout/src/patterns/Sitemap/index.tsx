@@ -23,9 +23,9 @@ const Sitemap = () => {
           </>
         ) : (
           <>
-            <SitemapList links={data.about} title="Informações" />
-            <SitemapList links={data.account} title="Minha Conta" />
-            <SitemapList links={data.stores} title="Onde nos Encontrar" />
+            <SitemapList links={data.about} heading="Informações" />
+            <SitemapList links={data.account} heading="Minha Conta" />
+            <SitemapList links={data.stores} heading="Onde nos Encontrar" />
           </>
         )}
       </div>
