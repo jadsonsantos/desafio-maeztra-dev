@@ -1,4 +1,8 @@
 .product {
+  &__infos {
+    padding: 0 27px;
+  }
+
   &__price {
     margin-bottom: 2px;
     color: var(--color-2-500, #353535);

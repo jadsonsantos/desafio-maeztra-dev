@@ -36,13 +36,15 @@ const ShelfItem: React.FC<ProductProps> = ({ product }: ProductProps) => {
         width={308}
         alt={name}
       />
-      <Skus skus={skus} />
-      <p className={styles.product__price}>{price}</p>
-      <p className={styles.product__name}>{name}</p>
-      <p className={styles.product__description}>{description}</p>
-      <Link href="/" className={styles.product__btn}>
-        Adicionar
-      </Link>
+      <div className={styles.product__infos}>
+        <Skus skus={skus} />
+        <p className={styles.product__price}>{price}</p>
+        <p className={styles.product__name}>{name}</p>
+        <p className={styles.product__description}>{description}</p>
+        <Link href="/" className={styles.product__btn}>
+          Adicionar
+        </Link>
+      </div>
     </li>
   )
 }
