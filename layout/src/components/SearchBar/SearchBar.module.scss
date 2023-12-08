@@ -1,0 +1,26 @@
+.searchbar {
+  &__input {
+    width: 672px;
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background: var(--color-4-500, #efefef);
+    color: var(--color-2-500, #353535);
+    font-family: var(--font-titilliumWeb);
+    font-size: 12px;
+    line-height: 18px; /* 150% */
+  }
+
+  &__button {
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    background: var(--color-1500-faa-500, #faa500);
+    color: var(--color-5-500, #fff);
+    text-align: center;
+    font-family: var(--font-titilliumWeb);
+    font-size: 14px;
+    line-height: 21px; /* 150% */
+  }
+}

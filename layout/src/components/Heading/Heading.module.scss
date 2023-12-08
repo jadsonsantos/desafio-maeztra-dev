@@ -1,0 +1,13 @@
+@import '../../styles/mixins';
+
+.heading {
+  color: var(--color-2-500, #353535);
+  text-align: center;
+  font-family: var(--font-titilliumWeb);
+  font-size: 24px;
+  font-weight: 700;
+
+  @include desktop() {
+    font-size: 32px;
+  }
+}

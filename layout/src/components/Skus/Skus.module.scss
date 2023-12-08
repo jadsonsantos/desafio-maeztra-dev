@@ -1,0 +1,17 @@
+.skus {
+  margin: 8px 0;
+  display: flex;
+  gap: 5px;
+
+  &__item {
+    width: 27px;
+    height: 27px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &--active,
+    &:is(:hover) {
+      border: 1px solid #000;
+    }
+  }
+}

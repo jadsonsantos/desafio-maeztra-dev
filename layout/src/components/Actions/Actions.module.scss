@@ -1,0 +1,23 @@
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &Highlighted {
+      background-color: black;
+    }
+  }
+
+  &__title {
+    color: var(--color-2-500, #353535);
+    font-family: var(--font-titilliumWeb);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+  }
+}

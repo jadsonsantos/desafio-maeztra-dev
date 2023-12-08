@@ -1,0 +1,23 @@
+.accordion {
+  padding: 8px 0;
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-2-500);
+    font-family: var(--font-titilliumWeb);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px; /* 112.5% */
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
