@@ -1,0 +1,38 @@
+.product {
+  &__price {
+    margin-bottom: 2px;
+    color: var(--color-2-500, #353535);
+    font-family: var(--font-titilliumWeb);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    color: var(--color-2-900, #000);
+    font-family: var(--font-titilliumWeb);
+    font-size: 16px;
+  }
+
+  &__description {
+    max-width: 248px;
+    margin-bottom: 8px;
+    color: var(--color-2-900, #000);
+    font-family: var(--font-titilliumWeb);
+    font-size: 12px;
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 4px;
+    background: var(--color-1500-faa-500, #faa500);
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-titilliumWeb);
+    font-size: 16px;
+  }
+}

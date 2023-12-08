@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.menu {
+  display: none;
+
+  &__list {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__item {
+    padding: 0 40px;
+    color: var(--color-2-500, #353535);
+    text-align: center;
+    font-family: var(--font-titilliumWeb);
+    font-size: 14px;
+    line-height: 21px; /* 150% */
+  }
+
+  @include desktop() {
+    display: block;
+  }
+}

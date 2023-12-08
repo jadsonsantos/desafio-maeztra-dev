@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+
+.sitemap {
+  padding: 40px 0 56px;
+  font-family: var(--font-titilliumWeb);
+
+  &__title {
+    margin-bottom: 12px;
+    color: var(--color-2-500, #353535);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px; /* 112.5% */
+  }
+
+  &__item {
+    padding: 12px 0;
+    color: var(--color-2-900, #000);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+  }
+
+  @include desktop() {
+    padding: 40px 0 64px;
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      gap: 300px;
+    }
+  }
+}

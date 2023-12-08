@@ -1,0 +1,79 @@
+@import '../../styles/mixins';
+
+.newsletter {
+  padding: 24px 0;
+  background: var(--color-4-500, #efefef);
+
+  &__container {
+    padding: 0 30px;
+  }
+
+  &__title {
+    color: var(--color-2-500, #353535);
+    text-align: center;
+    font-family: var(--font-titilliumWeb);
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__form {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__input {
+    height: 26px;
+    width: 204px;
+    border-radius: 4px;
+    border: 1px solid var(--color-2-500, #353535);
+    background: var(--color-5-500, #fff);
+    padding: 0 15px;
+    color: var(--color-2-500, #353535);
+    font-family: var(--font-titilliumWeb);
+    font-size: 14px;
+  }
+
+  &__button {
+    height: 26px;
+    padding: 0 20px;
+    border-radius: 4px;
+    border: 1px solid var(--color-1500-faa-500, #faa500);
+    background: var(--color-1500-faa-500, #faa500);
+    color: var(--color-5-500, #fff);
+    font-family: var(--font-titilliumWeb);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  @include desktop() {
+    padding: 40px 0;
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__form {
+      margin: 0;
+      gap: 0;
+    }
+
+    &__input {
+      width: 492px;
+      height: 40px;
+      border-radius: 4px 0 0 4px;
+    }
+
+    &__button {
+      border-radius: 0 4px 4px 0;
+      height: 40px;
+      padding: 0 40px;
+      font-size: 16px;
+    }
+  }
+}

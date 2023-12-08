@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+
+.brands {
+  margin: 40px 0;
+
+  &__list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    overflow-x: auto;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  @include desktop() {
+    &__list {
+      margin-top: 17px;
+      overflow: initial;
+    }
+  }
+}
