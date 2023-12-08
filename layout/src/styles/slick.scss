@@ -1,0 +1,29 @@
+@import './mixins.scss';
+
+.shelf {
+  @include desktop() {
+    .slick-slide {
+      padding: 0 8px;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+
+    .slick-active button:before {
+      color: var(--color-1-500, #faa500);
+    }
+
+    button:before {
+      font-size: 16px;
+      opacity: 1;
+      // color: transparent;
+      // border: 1px solid var(--color-1-500, #faa500);
+    }
+  }
+}
